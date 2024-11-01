@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    padding: 0 10px;
+}
+body::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("./login.PNG"), #000;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 415px;
+    border-radius: 9px;
+    padding: 32px;
+    text-align: center;
+    border: 2px solid white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(9px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 19px;
+    color: white;
+}
+.input-space{
+    position: relative;
+    border-bottom: 3px solid white;
+    margin: 20px 0;
+}
+.input-space input {
+    width: 100%;
+    height: 51px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+.input-space lable{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+.input-space input:focus~label
+.input-space input:valid~label{
+    font-size: 0.9rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+.remember-forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 26px 0 36px 0;
+    color: white;
+}
+#remember me{
+    accent-color: white;
+}
+.remember-forgot label p{
+    margin-left: 7px;
+}
+.remember-forgot label {
+    display: flex; 
+    align-items: center;
+}
+.container a {
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 17px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+button:hover{
+    color: white;
+    border-color: white;
+    background-color: rgb(32, 30, 30);
+
+}
+.show{
+    width: 80px;
+    height: 40px;
+    padding: 6px;
+}
+.hide{
+    width: 80px;
+    height: 40px;
+    padding: 6px;
+}
+.main{
+    margin-left: 200px;
+    display: flex;
+    top: -0px;
+margin-top: 180px;
+    position: absolute;
+}
+.register{
+    text-align: center;
+    margin-top: 29px;
+    color: white;
+}
+
+
+

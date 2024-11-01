@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <h2>login</h2>
+           
+            <div class="input-space">
+                <input id="Email" type="text" required>
+                <label for="enter your email"></label>
+            </div>
+            
+            <div class="main">
+                <button class="show" onclick="showpassword()">Show</button>
+                <button class="hide" onclick="hidepassword()">Hide</button>
+            </div>
+
+            <div class="input-space">
+                <input onblur="password(this)" id="password" type="password" required>
+                <label for="Enter Your Password"></label>
+            </div>
+        
+            <div class="remember-forgot">
+                <p style="display: none;" id="text">password is correct</p>
+            </label>
+            <a href="#">Forget Password</a>
+            </div>
+            <button onclick="correct(this)" type="submit">login</button>
+        
+            <div class="register">
+                <p>Don't Have an Account? <a href="#">Regester</a></p>
+            </div>
+        </form>
+            </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
